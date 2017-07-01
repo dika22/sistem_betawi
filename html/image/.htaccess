@@ -1,0 +1,3 @@
+RewriteEngine on
+
+RewriteRule ^load/([0-9]+)/([0-9]+)/(.*)$ t.php?w=$1&h=$2&src=$3 [L,NC]

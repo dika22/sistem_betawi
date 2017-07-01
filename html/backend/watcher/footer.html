@@ -1,0 +1,891 @@
+<!doctype html>
+<!--[if IE 7 ]>
+<html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="zxx">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Watcher - Responsive Magazine Template</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,400i,500,700,700i,900" rel="stylesheet">
+
+    <!-- Icon CSS -->
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/ts.css" rel="stylesheet">
+    <link href="js/slick/slick.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="wrapper">
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-3 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+				<div class="footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+			<div class="col-md-3 margin-bottom-30 footer-trending">
+				<h5>Recent</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="./post_page_02.html">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="./post_page_02.html">How to See If Your Dropbox Account Was Hacked</a></h4>
+						<span>Sep. 23, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="./post_page_02.html">You Can Now Bid on Steve Jobs' Famous Black Turtleneck</a></h4>
+						<span>Sep. 21, 2016</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 margin-bottom-30">
+				<h5>Categories</h5>
+				<ul class="categories">
+					<li><a href="#">Politics</a> <span>89</span></li>
+					<li><a href="#">Opinions</a> <span>28</span></li>
+					<li><a href="#">Sports</a> <span>74</span></li>
+					<li><a href="#">Local</a> <span>62</span></li>
+					<li><a href="#">National</a> <span>90</span></li>
+					<li><a href="#">World</a> <span>76</span></li>
+					<li><a href="#">Business</a> <span>58</span></li>
+				</ul>
+			</div>
+			<div class="col-md-3 margin-bottom-30 footer-follow">
+				<h5>Keep in Touch</h5>
+				<div class="footer-contact">
+					<form id="contactForm" action="php/contact.php" method="post">
+						<input name="senderName" id="senderName" type="text" placeholder="Name" required="required" />
+						<input type="email" name="senderEmail" id="senderEmail" placeholder="Email address" required="required" />
+						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<button type="submit">Submit</button>
+					</form>
+					<div id="sendingMessage" class="statusMessage">
+						<p><i class="fa fa-spin fa-spinner"></i> Sending your message. Please wait...</p>
+					</div>
+					<div id="successMessage" class="successmessage">
+						<p><i class="fa fa-check"></i> Thanks for sending your message! We'll get back to you shortly.</p>
+					</div>
+					<div id="failureMessage" class="errormessage">
+						<p><i class="fa fa-close"></i> There was a problem sending your message. Please try again.</p>
+					</div>
+					<div id="incompleteMessage" class="statusMessage">
+						<p><i class="fa fa-warning"></i> Please complete all the fields in the form before sending.</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-3 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora</p>
+				<span><i class="fa fa-map-marker"></i> 1610 Connecticut Avenue, NW, Suite 500</span>
+				<span><i class="fa fa-envelope"></i> <a href="mailto:info@watcher.com">info@watcher.com</a></span>
+				<span><i class="fa fa-phone"></i> +1-202-555-0113</span>
+			</div>
+			<div class="col-md-3 margin-bottom-30 footer-trending">
+				<h5>Recent</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/recent/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/recent/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/recent/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-3 margin-bottom-30 footer-tags">
+				<h5>Tags</h5>
+				<ul class="tags">
+					<li><a href="#">Finance</a></li>
+					<li><a href="#">Travel</a></li>
+					<li><a href="#">Business</a></li>
+					<li><a href="#">Opinion</a></li>
+					<li><a href="#">Tech</a></li>
+					<li><a href="#">Entertainment</a></li>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">World</a></li>
+					<li><a href="#">Lifestyle</a></li>
+					<li><a href="#">Health</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Food</a></li>
+					<li><a href="#">Sports</a></li>
+				</ul>
+			</div>
+			<div class="col-md-3 margin-bottom-30 footer-tags">
+				<h5><i class="fa fa-instagram"></i>&nbsp; Instagram</h5>
+				<ul class="instagram-lite"></ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-4 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-tweet">
+				<h5>Latest Tweets</h5>
+				<div id="tweecool"></div>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-follow">
+				<h5>Follow</h5>
+				<div class="footer-newsletter footer-newsletter2">
+					<form action="php/subscribe.php" id="invite" method="POST">
+						<i class="fa fa-envelope"></i>
+						<input type="email" placeholder="Email address" class="e-mail" name="email" id="address" data-validate="validate(required, email)">
+						<button type="submit">Subscribe</button>
+					</form>
+					<span>Don't worry we hate spam as much as you do</span>
+					<div id="result"></div>
+				</div>
+				<div class="footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-4 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
+				<span><i class="fa fa-map-marker"></i> 1610 Connecticut Avenue, NW, Suite 500</span>
+				<span><i class="fa fa-envelope"></i> <a href="mailto:info@watcher.com">info@watcher.com</a></span>
+				<span><i class="fa fa-phone"></i> +1-202-555-0113</span>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-trending">
+				<h5>Trending</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-follow">
+				<h5>Follow</h5>
+				<div class="footer-newsletter">
+					<form action="php/subscribe.php" id="invite" method="POST">
+						<i class="fa fa-envelope"></i>
+						<input type="email" placeholder="Email address" class="e-mail" name="email" id="address" data-validate="validate(required, email)">
+						<button type="submit">Subscribe</button>
+					</form>
+					<span>Don't worry we hate spam as much as you do</span>
+					<div id="result"></div>
+				</div>
+				<div class="footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-4 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
+				<div class="footer-social2">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-trending">
+				<h5>Trending</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 margin-bottom-30">
+				<h5>Categories</h5>
+				<ul class="categories">
+					<li><a href="#">Politics</a> <span>89</span></li>
+					<li><a href="#">Opinions</a> <span>28</span></li>
+					<li><a href="#">Sports</a> <span>74</span></li>
+					<li><a href="#">Local</a> <span>62</span></li>
+					<li><a href="#">National</a> <span>90</span></li>
+					<li><a href="#">World</a> <span>76</span></li>
+					<li><a href="#">Business</a> <span>58</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 padding-top-60">
+	<div class="container">
+		<div class="row margin-bottom-30">
+			<div class="col-md-4 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
+				<div class="footer-social3">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-youtube-play"></i></a>
+				</div>
+			</div>
+			<div class="col-md-4 margin-bottom-30 footer-trending">
+				<h5>Trending</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<span>Sep. 25, 2016</span>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 margin-bottom-30">
+				<h5>Popular</h5>
+				<ul class="trending">
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/1.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<div class="meta">
+							<span class="ratings">
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-half.png" alt=""/>
+							9.1
+							</span>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/2.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<div class="meta">
+							<span class="ratings">
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-half.png" alt=""/>
+							9.1
+							</span>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="pull-left"><img src="images/footer/trend/3.jpg" class="img-responsive" alt=""/></a>
+						<h4><a href="#">Why Uber Is Trying To Make Nice With Its Drivers</a></h4>
+						<div class="meta">
+							<span class="ratings">
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-full.png" alt=""/>
+							<img src="images/icon/star-half.png" alt=""/>
+							9.1
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 padding-top-60">
+	<div class="container padding-bottom-50">
+		<div class="footer-row1">
+			<div class="row">
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-row2">
+			<div class="row">
+				<div class="col-md-2 margin-bottom-30 footer-info">
+					<img src="images/flogo.png" class="img-responsive margin-top-40" alt=""/>
+				</div>
+				<div class="col-md-6 margin-bottom-30 footer-info padding-left-30">
+					<h5>About Us</h5>
+					<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+					<div class="span-align">
+						<span><i class="fa fa-envelope"></i> <a href="mailto:info@watcher.com">info@watcher.com</a></span>
+						<span><i class="fa fa-phone"></i> +1-202-555-0113</span>
+					</div>
+				</div>
+				<div class="col-md-4 margin-bottom-30">
+					<h5>Follow Us</h5>
+					<div class="footer-social2">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-youtube-play"></i></a>
+						<a href="#"><i class="fa fa-envelope"></i></a>
+						<a href="#"><i class="fa fa-rss"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2 footer-5col padding-top-60">
+	<div class="container padding-bottom-20">
+		<div class="row">
+			<div class="col-md-2 margin-bottom-30 footer-info">
+				<img src="images/flogo.png" class="img-responsive" alt=""/>
+				<p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat.</p>
+			</div>
+			<div class="col-md-2 margin-bottom-30 footer-link">
+				<h5>Entertainment</h5>
+				<ul>
+					<li><a href="#">Celebrity</a></li>
+					<li><a href="#">Gaming</a></li>
+					<li><a href="#">Music Entertainment</a></li>
+					<li><a href="#">Other Entertainment</a></li>
+					<li><a href="#">TV & Movie</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 margin-bottom-30 footer-link">
+				<h5>Entertainment</h5>
+				<ul>
+					<li><a href="#">Celebrity</a></li>
+					<li><a href="#">Gaming</a></li>
+					<li><a href="#">Music Entertainment</a></li>
+					<li><a href="#">Other Entertainment</a></li>
+					<li><a href="#">TV & Movie</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 margin-bottom-30 footer-link">
+				<h5>Entertainment</h5>
+				<ul>
+					<li><a href="#">Celebrity</a></li>
+					<li><a href="#">Gaming</a></li>
+					<li><a href="#">Music Entertainment</a></li>
+					<li><a href="#">Other Entertainment</a></li>
+					<li><a href="#">TV & Movie</a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 margin-bottom-30">
+				<h5>Follow Us</h5>
+				<div class="footer-social">
+					<span><a href="#"><i class="fa fa-facebook"></i></a> Facebook</span>
+					<span><a href="#"><i class="fa fa-twitter"></i></a> Twitter</span>
+					<span><a href="#"><i class="fa fa-linkedin"></i></a> Linkedin</span>
+					<span><a href="#"><i class="fa fa-instagram"></i></a> Intagram</span>
+					<span><a href="#"><i class="fa fa-youtube-play"></i></a> Youtube</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="row">
+				<div class="col-md-4">
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-8">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="padding-vertical-30"></div>
+
+<!-- FOOTER -->
+<footer class="bg-dark footer1 footer2">
+	<div class="container">
+		<div class="footer-row3 padding-top-25">
+			<div class="row center-content">
+				<div class="col-md-6 margin-bottom-25">
+					<h5>Newsletter</h5>
+					<div class="footer-newsletter footer-newsletter2 pull-right">
+						<form action="php/subscribe.php" id="invite" method="POST">
+							<i class="fa fa-envelope"></i>
+							<input type="email" placeholder="Email address" class="e-mail" name="email" id="address" data-validate="validate(required, email)">
+							<button type="submit">Subscribe</button>
+						</form>
+						<div id="result"></div>
+					</div>
+				</div>
+				<div class="col-md-6 margin-bottom-25">
+					<div class="text-right">
+						<h5>Follow us</h5>
+						<div class="footer-social2">
+							<a href="#" class="margin-left-25"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-linkedin"></i></a>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-youtube-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container padding-top-60 padding-bottom-50">
+		<div class="footer-row1">
+			<div class="row">
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 margin-bottom-25 footer-link">
+					<h5>Entertainment</h5>
+					<ul>
+						<li><a href="#">Celebrity</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Music Entertainment</a></li>
+						<li><a href="#">Other Entertainment</a></li>
+						<li><a href="#">TV & Movie</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="footer-bottom">
+			<div class="row center-content">
+				<div class="col-md-6">
+					<img src="images/flogo2.png" class="flogo2 pull-left" alt=""/> 
+					<p>&copy; Copyright 2016 Watcher.com. All rights reserved.</p>
+				</div>
+				<div class="col-md-6">
+					<ul class="footer-links">
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Subscribe</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="js/slick/slick.min.js"></script>
+<script src="js/socialShare.min.js"></script>
+<script src="js/jquery.simpleWeather.min.js"></script>
+<script src="js/lity/lity.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/main.js"></script>
+
+<!-- Mailchimp Js -->
+<script src="js/mc/jquery.ketchup.all.min.js"></script>
+<script src="js/mc/main.js"></script>
+
+<!-- Twitterfeed -->
+<script src="js/tweecool.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#tweecool').tweecool({
+      //Replace TWEECOOL with your twitter username
+       username : 'tweecool', 
+	  profile_image: false,
+       limit : 1	
+    });
+});
+</script>
+
+<!-- Instagram Feed -->
+<script src="js/instagramLite.min.js"></script>
+<script>
+$('.instagram-lite').instagramLite({
+
+    //Replace ACCESSTOKEN with your twitter username
+    accessToken: '1730464.199554e.e561d1b801d74e35a1453110a44a09e8',
+    urls: false,
+    limit: 9,
+    captions: false,
+    likes: false,
+    comments_count: false,
+    success: function() {
+        console.log('The request was successful!');
+    },
+    error: function() {
+        console.log('There was an error with your request.');
+    }
+});
+</script>
+            
+</body>
+</html>
